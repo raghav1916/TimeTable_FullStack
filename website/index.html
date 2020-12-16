@@ -1,10 +1,10 @@
 <html>
     <head>
         <title>WesternTimeTable</title>
-        <meta charset="UTF-8">
-        <script src="./sketch.js" type="text/javascript"></script>
+        <meta charset="UTF-8">  
     </head>
     <body>
+        <script src="./sketch.js" type="text/javascript"></script>
         <p>
         <input id="submit"  type="submit" value="getCourses" onclick="setup()" /><br/>
         Enter Subject:<input id="subject_name"/><input id="submitCourses"  type="submit" value="getCoursesBySubject" onclick="getCourseBySubject()" /><br/>
@@ -86,19 +86,81 @@
      <input id="submitSchedule"  type="submit" value="getTimeTableForMySchedule" onclick="getMyTimeTable()" /><br/>
      <div class="container">
         <div class="table-responsive">
-            <table class="table table-bordered table-striped" id="time_table_by_schedule">
+            <table class="table" id="time_table_by_schedule">
                 <tr>
-                    <th>DESCRIPTION</th>
-                    <th>COURSE_NUMBER</th>
-                    <th>CLASSNAME</th>
-                    <th>DAYS</th>
-                    <th>START_TIME</th>
-                    <th>END_TIME</th>
-                    <th>SUBJECT</th>
+                    <th onclick="sortTable(0)">COURSE_NUMBER</th>
+                    <th  onclick="sortTable(1)">CLASSNAME</th>
+                    <th  onclick="sortTable(2)">DAYS</th>
+                    <th  onclick="sortTable(3)">START_TIME</th>
+                    <th  onclick="sortTable(4)">END_TIME</th>
+                    <th  onclick="sortTable(5)">SUBJECT</th>
+                    <th  onclick="sortTable(6)">YEAR</th>
                 </tr>
             </table>
         </div>
     </div>
     </p>
+    <p>
+        <input id="submit"  type="submit" value="getPublicCourseLists" onclick="viewallschedules()" /><br/>
+        <div class="container">
+           <div class="table-responsive">
+               <table class="table table-bordered table-striped" id="view_schedule">
+                   <tr>
+                       <th>NAME</th>
+                       <th>USERNAME</th>
+                       <th>NUMBER OF COURSES</th>
+                   </tr>
+               </table>
+           </div>
+       </div>
+       </p>
+
+       <p>
+        <input id="submit"  type="submit" value="Create List" onclick="addCoursesList()"/><br/>
+        Enter Name:<input id="Name_Add"/><br/>
+        Enter Course_Code:<input id="Add_Course_Code"/><br/>
+        Enter Subject:<input id="Add_Subject"/><br/>
+        Enter Optional_Description:<input id="add_Optional_description"/><br/>
+        Enter Course_Number(1-6):<input id="add_course_number"/><br/>
+        <input type="checkbox" id="visibility" name="public_visibility" value="public_visibility">
+        <label for="visibility">public_visibility</label><br/>
+       </p>
+       <p>
+        Enter UserName:<input id="user_courseList"/>
+        <input id="submit" type="submit" value="Get My Course Lists" onclick="getMyCourseLists()"/><br/>
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped" id="user_courseLists">
+                    <tr>
+                        <th>SUBJECT CODE</th>
+                        <th>SUBJECT</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </p>
+        <p>
+            Enter courseID:<input id="user_courseId"/>
+            Enter Review:<input id="user_review"/>
+            <input id="submit" type="submit" value="saveReview" onclick="saveReview()"/><br/>
+        </p>
+        <p>
+            <div class="container">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped" id="courseLists_timetable">
+                        <tr>
+                            <th>DESCRIPTION</th>
+                            <th>COURSE_NUMBER</th>
+                            <th>CLASSNAME</th>
+                            <th>DAYS</th>
+                            <th>START_TIME</th>
+                            <th>END_TIME</th>
+                            <th>SUBJECT</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </p>
+       
     </body>
 </html>
