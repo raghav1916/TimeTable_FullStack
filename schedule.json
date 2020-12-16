@@ -1,34 +1,139 @@
 {
   "schedule": [
     {
-      "schedule_name": "Schedule3",
+      "user_name": "ANKITA",
+      "schedule_name": "SCHEDULE3",
       "courses_list": [
-        {
-            "catalog_nbr": "5203B",
-            "subject": "THEOETH"
-        }
+        [
+          {
+            "catalog_nbr": "1021B",
+            "subject": "ACTURSCI",
+            "visibility": "Y"
+          }
+        ],
+        [
+          {
+            "catalog_nbr": "4824A",
+            "subject": "ACTURSCI",
+            "visibility": "Y"
+          },
+          {
+            "review": "It is a great subject to explore!"
+          }
+        ],
+        [
+          {
+            "catalog_nbr": "1201B",
+            "subject": "APPLMATH",
+            "visibility": "Y"
+          },
+          {
+            "review": "ITISAGREATINTERACTIVECOURSE!"
+          }
+        ],
+        [
+          {
+            "catalog_nbr": "2250A",
+            "subject": "ARABIC",
+            "optional_desc": "This is completely arabic advanced which needs basics",
+            "visibility": "N"
+          },
+          {
+            "review": "THISISTHEMOSTCREATIVECOURSEEVER"
+          }
+        ],
+        [
+          {
+            "catalog_nbr": "1642A",
+            "subject": "AH",
+            "optional_desc": "This is completely arabic advanced which needs basics"
+          }
+        ],
+        [
+          {
+            "catalog_nbr": "2632G",
+            "subject": "AH",
+            "optional_desc": "N/A",
+            "Visibility": "Y"
+          }
+        ],
+        [
+          {
+            "catalog_nbr": "2021A",
+            "subject": "ASTRONOM",
+            "optional_desc": "MATTEROFSCIENCE",
+            "Visibility": "N"
+          }
+        ],
+        [
+          {
+            "catalog_nbr": "5110A",
+            "subject": "BIBLSTUD",
+            "course_number": 3
+          }
+        ],
+        [
+          {
+            "catalog_nbr": "1220E",
+            "subject": "BUSINESS",
+            "optional_desc": "ONLINE",
+            "Visibility": "N",
+            "course_number": "4"
+          }
+        ]
       ]
     },
     {
-      "schedule_name": "Schedule383",
+      "user_name": "RAGHAV",
+      "schedule_name": "SCHEDULE383",
       "courses_list": [
         {
           "catalog_nbr": "2980C",
-          "subject": "ACTURSCI"
+          "subject": "ACTURSCI",
+          "visibility": "Y"
         }
       ]
     },
     {
-      "schedule_name": "Schedule433",
+      "user_name": "RAGHU",
+      "schedule_name": "SCHEDULE433",
       "courses_list": [
         {
           "catalog_nbr": "2053",
-          "subject": "ACTURSCI"
+          "subject": "ACTURSCI",
+          "visibility": "Y"
         },
         {
           "catalog_nbr": "1024G",
-          "subject": "WOMENST"
+          "subject": "WOMENST",
+          "visibility": "Y"
         }
+      ]
+    },
+    {
+      "user_name": "SHANU",
+      "schedule_name": "SCHEDULE123",
+      "courses_list": [
+        [
+          {
+            "catalog_nbr": "1021B",
+            "subject": "ACTURSCI"
+          }
+        ],
+        [
+          {
+            "catalog_nbr": "1411B",
+            "subject": "APPLMATH"
+          }
+        ],
+        [
+          {
+            "catalog_nbr": "1299A",
+            "subject": "GEOLOGY",
+            "optional_desc": "N&#X2F;A",
+            "Visibility": "N"
+          }
+        ]
       ]
     }
   ]
